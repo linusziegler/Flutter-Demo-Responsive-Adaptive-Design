@@ -79,12 +79,6 @@ class MainApp extends StatelessWidget {
                 ]),
                 BasicTitle(content: "Responsive Scaling using Media Query"),
                 ResponsiveShape(),
-                BasicTitle(content: "Adaptive Layout using Layoutbuilder"),
-                ResponsiveLayout(
-                      mobileLayout: MobileLayout(),
-                      tabletLayout: TabletLayout(),
-                      desktopLayout: DesktopLayout()
-                      ),
                 BasicTitle(content: "Adaptive Widgets"),
                 Column(
                   children: [
@@ -98,6 +92,12 @@ class MainApp extends StatelessWidget {
                   Radio.adaptive(value: false, groupValue: false, onChanged: null),
                   SizedBox(height: 10),
                 ]),          
+                BasicTitle(content: "Adaptive Layout using Layoutbuilder"),
+                ResponsiveLayout(
+                      mobileLayout: MobileLayout(),
+                      tabletLayout: TabletLayout(),
+                      desktopLayout: DesktopLayout()
+                      ),
               ],
             )));
   }
